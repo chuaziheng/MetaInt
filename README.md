@@ -1,3 +1,3 @@
-## Metaphor Interpretation App
+## Metaphor Interpretation Demo
 
 Under Construction

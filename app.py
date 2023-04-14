@@ -36,9 +36,9 @@ def main():
         with col1_checkbox:
             select_task1 = st.checkbox('Task 1 (CLS)', value=True)
         with col2_checkbox:
-            select_task2 = st.checkbox('task 2 (MLM)', value=True)
+            select_task2 = st.checkbox('Task 2 (MLM)', value=True)
         # Add a dropdown below the title
-        option = st.selectbox("Select an option:", ["Example 1", "Example 2", "Example 3", "Custom"])
+        option = st.selectbox("Select an option:", INPUT_EXAMPLES_DICT.keys())
 
         input_metaphor_sentence = st.text_area("Enter your text here:", height=200, value=INPUT_EXAMPLES_DICT[option]['metaphor_sentence'])
 

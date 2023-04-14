@@ -5,28 +5,36 @@ from typing import List
 device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
 
 INPUT_EXAMPLES_DICT = {
-    'Custom': {
-        'metaphor_sentence': "",
-        'positive': "",
-        'neg_1': "",
-        'neg_2': "",
-        'neg_3': "",
-    },
     'Example 1': {
-        'metaphor_sentence': "Now that they ca n't X_get X_hold of cocaine they 'll just crash out .",
+        'metaphor_sentence': "I managed to X_get X_hold of this limited edition bag .",
         'positive': "acquire",
         'neg_1': "achieve",
         'neg_2': "collect",
         'neg_3': "earn",
     },
     'Example 2': {
-        'metaphor_sentence': "",
-        'positive': "",
-        'neg_1': "",
-        'neg_2': "",
-        'neg_3': "",
+        # 'metaphor_sentence': "The average man is a M_cool and common person.",
+        'metaphor_sentence': "The average man is a M_cool , common person , with a thoughtful air , with figures in his mind , with his own business to attend , with a set of ordinary opinions developing from and fit to ordinary life .",
+        'positive': "calm",
+        'neg_1': "chill",
+        'neg_2': "change_state",
+        'neg_3': "equanimity",
     },
     'Example 3': {
+        'metaphor_sentence': "The carlton meeting on Monday X_went X_off quite admirably",
+        'positive': "happened",
+        'neg_1': "blow",
+        'neg_2': "detonate",
+        'neg_3': "exploded",
+    },
+    'Example 4': {
+        'metaphor_sentence': "I am X_up X_to X_speed with Adam, of course, but is your planning all right?",
+        'positive': "familiar",
+        'neg_1': "fast",
+        'neg_2': "intimate",
+        'neg_3': "friendly",
+    },
+    'Custom': {
         'metaphor_sentence': "",
         'positive': "",
         'neg_1': "",
